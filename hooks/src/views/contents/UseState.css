@@ -1,7 +1,7 @@
 .campo {
     border-radius: 5px;
     font-weight: 300;
-    font-size: 1,2rem;
+    font-size: 1.2rem;
     margin: 10px;
     padding: 5px;
     width: 80%;
@@ -21,6 +21,8 @@
 
 .mensagem {
     display: flex;
+    background-color: lightgray;
+    color: black;
     border-radius: 5px;
     font-weight: 300;
     font-size: 1.2rem;
@@ -30,12 +32,4 @@
     height: 30px;
     align-items: center;
     justify-content: center;
-}
-
-#Aprovado {
-    background-color: blue;
-}
-
-#Reprovado {
-    background-color: tomato;
 }

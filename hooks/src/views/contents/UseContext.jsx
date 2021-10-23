@@ -1,7 +1,7 @@
-import './useContext.css'
+import './UseContext.css'
 import React, { useContext } from "react"
 
-import { AppContexto } from '../../data/Store'
+import { AppContexto } from '../../data/Store.jsx'
 
 const UseContext = props => {
 

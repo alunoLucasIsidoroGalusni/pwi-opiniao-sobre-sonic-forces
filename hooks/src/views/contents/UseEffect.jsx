@@ -16,7 +16,7 @@ const UseEffect = props => {
     }, [])
 
     useEffect( () => {
-        setSituacao( vericaSituacao(notaFinal) )
+        setSituacao( verificaSituacao(notaFinal) )
     }, [notaFinal] )
 
     useEffect( () => {
