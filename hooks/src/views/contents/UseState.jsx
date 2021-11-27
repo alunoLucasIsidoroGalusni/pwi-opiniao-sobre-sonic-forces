@@ -19,7 +19,9 @@ const UseState = props => {
         <div>
             <div className="titulo">
                 <h1>Olá</h1>
-                <h2>Somos os desenvolvedore do jogo sonic forces, gostariamos de saber o que achou do jogo para sabermos o que deveriamos melhorar</h2>
+                <h2>Somos fãs do jogo sonic forces, gostariamos de saber o que achou do jogo para sabermos o que acha que deve melhorar
+                    no proximo jogo do ouriçado
+                </h2>
             </div>
 
             <div className="conteudo">
