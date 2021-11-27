@@ -1,68 +1,17 @@
 import './UseEffect.css'
-import React, {  useState, useEffect } from "react"
 
 const UseEffect = props => {
 
-    const [ notaFinal, setNotaFinal ] = useState(0)
-    const [ situacao, setSituacao ] = useState("")
-
-    useEffect( () => {
-        console.log('useEffect: executa a cada Re-Renderização. \n\n')
-    })
-
-    useEffect( () => {
-        console.log('useEffect condicional ao componente:')
-        console.log('Executa somente na montagem do componente \n\n.')
-    }, [])
-
-    useEffect( () => {
-        setSituacao( verificaSituacao(notaFinal) )
-    }, [notaFinal] )
-
-    useEffect( () => {
-        console.log('useEffect condicional:')
-        console.log('nesse caso, executa quando o state situacao for alterado. \n\n')
-    }, [situacao])
-
-    useEffect( () => {
-        console.log('useEffect condicional (com limpeza):')
-        console.log('Executa enquanto um componente existir. \n\n')
-
-        return () => {
-            console.log('useEffect condicional (com limpeza):')
-            console.log('Executa o return quando o componente for desmontado. \n\n')
-        }
-    }, [])
-
-    console.log('\nO componente foi resnderizado. \n\n')
-
-    function verificaSituacao(nota) {
-        return nota >= 6 ? "Aprovado" : "Reprovado"
-    }
 
     return (
         <div>
-            <div className="tirulo">
-                <h1>useEffect</h1>
-                <h2>Permite executar efeitos colaterais em componentes funcionais</h2>
+            <div className="titulo">
+                <h1>Detalhes</h1>
             </div>
+            <h2>Sonic Forces é um jogo eletrônico de plataforma desenvolvido pela Sonic Team e publicado pela Sega. Seu lançamento foi em 7 de Novembro de 2017 no mundo inteiro, e 9 de Novembro de 2017 no Japão. Lançado para Nintendo Switch, Microsoft Windows, PlayStation 4 e Xbox One. Foi anunciado inicialmente como Project Sonic 2017, em julho de 2016.
 
-            <div className="conteudo">
-
-                <label className="campo">Nota final:</label>
-                <input
-                classname="campo"
-                type="number"
-                min={0}
-                max={10}
-                value={notaFinal}
-                onChange={ e => setNotaFinal(e.target.value) }
-                />
-
-                <label className="campo">Situação:</label>
-                <p className="mensagem" id={situacao}>{situacao}</p>
-            </div>
+O jogo tinha a intenção de ter um tom mais sombrio em comparação com as entradas anteriores da franquia, e o sistema de criação de personagens foi inspirado na arte de fãs da Sonic que os desenvolvedores haviam encontrado ao longo dos anos.</h2>
         </div>
     )
-}
+    }
 export default UseEffect

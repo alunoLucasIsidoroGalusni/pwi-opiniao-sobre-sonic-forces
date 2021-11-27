@@ -5,23 +5,18 @@ import { AppContexto } from '../../data/Store.jsx'
 
 const UseContext = props => {
 
-    const {contextoNome, setContextoNome} = useContext(AppContexto)
-    const {contextoSenha, setContextoSenha} = useContext(AppContexto)
 
     return (
         <div>
             <div className="titulo">
-                <h1>useContext</h1>
-                <h2>Aceita um objeto de context e retorna o valor atual do contexto</h2>
+                <h1>Sobre</h1>
             </div>
+            <h2>É um projeto sobre um aplicativo
+                 em que fãs do jogo sonic forces querem saber a opiniao das pessoas sobre a gameplay 
+                 e a historia do jogo</h2>
+                 <h3>Lucas isidoro Galusni</h3>
 
-            <div className="conteudo">
-
-                <label className="campo">Acesso encapsulado ao Context (Store)</label>
-                <p className="mensagem">Nome: {contextoNome}</p>
-                <p className="mensagem">Senha: {contextoSenha}</p>
-
-            </div>
+            
         </div>
     )
 }

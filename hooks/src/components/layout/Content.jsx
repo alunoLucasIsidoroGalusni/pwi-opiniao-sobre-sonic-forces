@@ -13,13 +13,13 @@ const Content = props => (
             <Route exact path="/">
                 <Hooks />
             </Route>
-            <Route path="/conteudo01/:usuario">
+            <Route path="/UseContext">
                 <UseState />
             </Route>
-            <Route path="/conteudo02">
+            <Route path="/UseEffect">
                 <UseEffect />
             </Route>
-            <Route path="/conteudo03">
+            <Route path="/UseState">
                 <UseContext />
             </Route>
             <Route path="*">
